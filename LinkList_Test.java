@@ -77,6 +77,16 @@ public class LinkListTest {
         Assert.assertEquals("[ Vishal, Waman ]", linkList.toString());
     }
 
+    @Test
+    public void givenIndexInteger_shouldReturn_positionOfElement() {
+        LinkList<Integer> linkList = new LinkList<>();
+        linkList.add(4);
+        linkList.add(3);
+        linkList.add(2);
+        linkList.add(1);
+        Assert.assertEquals(2,linkList.index(2));
+    }
+
 
 
 }
