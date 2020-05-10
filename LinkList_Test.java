@@ -69,6 +69,14 @@ public class LinkListTest {
         Assert.assertEquals(2,linkList.size());
     }
 
+    @Test
+    public void givenAppendString_shouldAdd_elementAtLast() {
+        LinkList<String> linkList = new LinkList();
+        linkList.add("Vishal");
+        linkList.append("Waman");
+        Assert.assertEquals("[ Vishal, Waman ]", linkList.toString());
+    }
+
 
 
 }
