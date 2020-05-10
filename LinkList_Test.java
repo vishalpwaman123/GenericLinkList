@@ -30,4 +30,13 @@ public class LinkListTest {
         Assert.assertTrue(linkList.search(2));
     }
 
+    @Test
+    public void givenSearchItem_WhenSearch_ifAbsent_shouldReturnFalse() {
+        LinkList<Integer> linkList = new LinkList();
+        linkList.add(1);
+        linkList.add(2);
+        linkList.add(4);
+        Assert.assertFalse(linkList.search(3));
+    }
+
 }
