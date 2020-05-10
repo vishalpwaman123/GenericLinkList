@@ -107,6 +107,15 @@ public class LinkListTest {
         Assert.assertEquals("[ 1, 2, 3, 4 ]", linkList.toString());
     }
 
+    @Test
+    public void givenRemoveInteger_WhenRemove_shouldRemoveLastElement() {
+        LinkList<Integer> linkList = new LinkList();
+        linkList.add(11);
+        linkList.add(43);
+        linkList.pop();
+        Assert.assertEquals("[ 11 ]", linkList.toString());
+    }
+
 
 
 }
