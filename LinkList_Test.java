@@ -61,5 +61,14 @@ public class LinkListTest {
         Assert.assertEquals(2,linkList.size());
     }
 
+    @Test
+    public void givenAppendInteger_shouldAdd_elementAtLast() {
+        LinkList<Integer> linkList = new LinkList<>();
+        linkList.add(1);
+        linkList.append(6);
+        Assert.assertEquals(2,linkList.size());
+    }
+
+
 
 }
