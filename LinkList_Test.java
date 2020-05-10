@@ -87,6 +87,15 @@ public class LinkListTest {
         Assert.assertEquals(2,linkList.index(2));
     }
 
+    @Test
+    public void givenIndexString_shouldReturn_positionOfElement() {
+        LinkList<String> linkList = new LinkList();
+        linkList.add("Apple");
+        linkList.append("Mango");
+        linkList.append("Banana");
+        linkList.append("Peach");
+        Assert.assertEquals(3, linkList.index("Banana"));
+    }
 
 
 }
