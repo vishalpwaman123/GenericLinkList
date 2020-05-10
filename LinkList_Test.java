@@ -20,4 +20,14 @@ public class LinkListTest {
         linkList.add("Waman");
         Assert.assertEquals("[ Vishal, Waman ]", linkList.toString());
     }
+	
+    @Test
+    public void givenSearchItem_WhenSearch_ifPresent_shouldReturnTrue() {
+        LinkList<Integer> linkList = new LinkList();
+        linkList.add(1);
+        linkList.add(2);
+        linkList.add(3);
+        Assert.assertTrue(linkList.search(2));
+    }
+
 }
