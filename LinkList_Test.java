@@ -53,5 +53,13 @@ public class LinkListTest {
         Assert.assertFalse(linkList.isEmpty());
     }
 
+    @Test
+    public void givenSizeMethod_shouldReturn_numberOfElement() {
+        LinkList<Integer> linkList = new LinkList<>();
+        linkList.add(6);
+        linkList.add(9);
+        Assert.assertEquals(2,linkList.size());
+    }
+
 
 }
