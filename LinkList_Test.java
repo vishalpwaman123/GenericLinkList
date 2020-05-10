@@ -39,4 +39,11 @@ public class LinkListTest {
         Assert.assertFalse(linkList.search(3));
     }
 
+    @Test
+    public void givenEmptyList_shouldReturnTrue() {
+        LinkList<Integer> linkList = new LinkList<>();
+        Assert.assertTrue(linkList.isEmpty());
+    }
+
+
 }
